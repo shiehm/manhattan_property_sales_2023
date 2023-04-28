@@ -49,7 +49,7 @@ neighborhood_avg = neighborhood_avg.sort_values(y_col, ascending=False)
 fig = px.bar(neighborhood_avg.dropna(), 
              x='neighborhood', 
              y=y_col, 
-             title='Average Price/SqFt Across Neighborhoods',
+             title='Average Price Across Neighborhoods',
              labels = {
                  'neighborhood':'Neighborhood',
                  y_col:y_label
@@ -80,7 +80,11 @@ st.header('Price PSF Ranges by Neighborhood')
 fig = px.box(df, 
              x='neighborhood', 
              y='sqft_price', 
-             notched=True
+             notched=True,
+             labels = {
+                 'neighborhood':'Neighborhood',
+                 'sqft_price':'Price/sqft'
+             }
             )
 st.plotly_chart(fig, use_container_width=True)
 st.divider()
