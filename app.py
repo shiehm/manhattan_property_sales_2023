@@ -27,7 +27,7 @@ for i in building_class:
                       )
     fig.update_layout(showlegend=False)
     fig.update_yaxes(title='Frequency')
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, use_container_width=True, theme="streamlit")
 st.divider()
 
 
@@ -56,7 +56,7 @@ fig = px.bar(neighborhood_avg.dropna(),
              }
             )
 # fig.update_layout(yaxis=dict(tickmode='linear', nticks=4))
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, use_container_width=True, theme="streamlit")
 st.divider()
 
 
@@ -71,7 +71,7 @@ fig = px.scatter(df,
                  'sale_price':'Sale Price'
              }
             )
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, use_container_width=True, theme="streamlit")
 st.divider()
 
 
@@ -86,6 +86,6 @@ fig = px.box(df,
                  'sqft_price':'Price/sqft'
              }
             )
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, use_container_width=True, theme="streamlit")
 st.divider()
 
