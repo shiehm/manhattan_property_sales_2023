@@ -26,14 +26,14 @@ Source: NYC Open Data.
 `residential_units` Number of residential units, if larger than a unit \
 `commercial_units` Number of commercial units, if any \
 `total_units` Total number of units \
-`land_square_feet` Size of land in square feet \ 
+`land_square_feet` Size of land in square feet \
 `gross_square_feet` Size of building in square feet \
 `year_built` Year built in YYYY format \
 `building_class_at_time_of_sale` Building class at time of sale per NYC government \
 `sale_price` Sale price in $US dollars \
 `sale_date` Date of sale \
 `unit_price` Sale price / total units \
-`sqft_price` Sale price / gross square footage \
+`sqft_price` Sale price / gross square footage 
 
 ## Summary
 I cleaned the data from NYC Open Data, removing unecessary rows and columns including: 
