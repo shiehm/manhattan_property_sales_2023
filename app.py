@@ -34,15 +34,25 @@ st.divider()
 
 st.header('Average Sale Price Across Neighborhoods')
 neighborhood_avg = df.groupby('neighborhood')[['unit_price','sqft_price']].mean().reset_index()
-neighborhood_avg = neighborhood_avg.sort_values('sqft_price', ascending=False)
+
+# create a checkbox to toggle between price per sqft and price per unit
+price_type = st.checkbox('Toggle Price Type', value=False)
+if price_type:
+    y_col = 'unit_price'
+    y_label = 'Price / Unit'
+else:
+    y_col = 'sqft_price'
+    y_label = 'Price / SqFt'
+
 # Create bar chart
+neighborhood_avg = neighborhood_avg.sort_values(y_col, ascending=False)
 fig = px.bar(neighborhood_avg.dropna(), 
              x='neighborhood', 
-             y='sqft_price', 
+             y=y_col, 
              title='Average Price/SqFt Across Neighborhoods',
              labels = {
                  'neighborhood':'Neighborhood',
-                 'sqft_price':'Price / SqFt'
+                 y_col:y_label
              }
             )
 # fig.update_layout(yaxis=dict(tickmode='linear', nticks=4))
@@ -75,19 +85,3 @@ fig = px.box(df,
 st.plotly_chart(fig, use_container_width=True)
 st.divider()
 
-
-
-st.subheader('Just for testing')
-agree = st.checkbox('I agree')
-if agree:
-    st.write('Great!')
-
-# st.checkbox(label, 
-#             value=False, 
-#             key=None, 
-#             help=None, 
-#             on_change=None, 
-#             args=None, 
-#             kwargs=None, *, 
-#             disabled=False, 
-#             label_visibility="visible")
