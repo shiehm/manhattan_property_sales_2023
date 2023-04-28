@@ -16,23 +16,23 @@ Source: NYC Open Data.
 - Build a web app using Streamlit and Render
 
 ## Data Source
-`neighborhood` Neighborhood of NYC the property is located in 
-`building_class_category` Description of the building class at present
-`building_class_at_present` Current building class per NYC government
-`address` Street address of the property
-`apartment_number` Apartment number of the property, if any
-`zip_code` Zip code of the property
-`residential_units` Number of residential units, if larger than a unit
-`commercial_units` Number of commercial units, if any
-`total_units` Total number of units
-`land_square_feet` Size of land in square feet 
-`gross_square_feet` Size of building in square feet
-`year_built` Year built in YYYY format
-`building_class_at_time_of_sale` Building class at time of sale per NYC government
-`sale_price` Sale price in $US dollars
-`sale_date` Date of sale
-`unit_price` Sale price / total units 
-`sqft_price` Sale price / gross square footage
+`neighborhood` Neighborhood of NYC the property is located in \
+`building_class_category` Description of the building class at present \
+`building_class_at_present` Current building class per NYC government \
+`address` Street address of the property \
+`apartment_number` Apartment number of the property, if any \
+`zip_code` Zip code of the property \
+`residential_units` Number of residential units, if larger than a unit \
+`commercial_units` Number of commercial units, if any \
+`total_units` Total number of units \
+`land_square_feet` Size of land in square feet \ 
+`gross_square_feet` Size of building in square feet \
+`year_built` Year built in YYYY format \
+`building_class_at_time_of_sale` Building class at time of sale per NYC government \
+`sale_price` Sale price in $US dollars \
+`sale_date` Date of sale \
+`unit_price` Sale price / total units \
+`sqft_price` Sale price / gross square footage \
 
 ## Summary
 I cleaned the data from NYC Open Data, removing unecessary rows and columns including: 
