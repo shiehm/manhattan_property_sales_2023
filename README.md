@@ -7,7 +7,7 @@ Source: NYC Open Data.
 - How to deploy locally:
     - Make sure you have python and Streamlit installed using `pip install streamlit`
     - Create a folder where you want to download the program files  
-    - Open the folder through your terminal and clone the repository to your local machine with 'git clone https://github.com/shiehm/manhattan_property_sales_2023`
+    - Open the folder through your terminal and clone the repository to your local machine with 'git clone` https://github.com/shiehm/manhattan_property_sales_2023
     - Run `streamlit run app.py` with the folder open on your terminal
     - Access the project on your brower at: http://localhost:10000/
 
