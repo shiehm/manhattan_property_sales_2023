@@ -2,8 +2,17 @@
 Note: All property sales in Manhattan from April 2022 - March 2023. 
 Source: NYC Open Data. 
 
+## Accessing the Project:
+- Render-hosted Website: https://manhattan-property-sales-2023.onrender.com/
+- How to deploy locally:
+    - Make sure you have python and Streamlit installed using `pip install streamlit`
+    - Create a folder where you want to download the program files  
+    - Open the folder through your terminal and clone the repository to your local machine with 'git clone https://github.com/shiehm/manhattan_property_sales_2023`
+    - Run `streamlit run app.py` with the folder open on your terminal
+    - Access the project on your brower at: http://localhost:10000/
+
 ## Files:
-- Render Website: https://manhattan-property-sales-2023.onrender.com/
+- GitHub Repository: 
 - Raw data from NYC Open Data: rollingsales_manhattan.csv
 - Cleaned data: manhattan_sales_cleaned_2023.csv
 - EDA notebook: manhattan_sales_EDA.ipynb
